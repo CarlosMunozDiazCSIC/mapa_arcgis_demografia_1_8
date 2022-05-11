@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Mapa de porcentaje de población mayor de 65 años en la Unión Europea por país</title>
+  <title>Mapa de porcentaje de población mayor de 65 años en Europa por país</title>
   <style>
     html, 
 	body, 
@@ -67,12 +67,12 @@
 	  
 	  const template = {
         title: "<b>{País}</b>",
-        content: "Población con 65 o más años: {valor}%"
+        content: "Población con 65 o más años: {POB_65}%"
 		};
 	  
 	  const featureLayer = new FeatureLayer({
 		url: "https://services-eu1.arcgis.com/WCEIifo5j3luTcRc/arcgis/rest/services/Informe_envejecimiento_WFL1/FeatureServer/2",
-		title: "Porcentaje de población mayor de 65 años por país de la Unión Europea",
+		title: "Porcentaje de población mayor de 65 años por país en Europa",
 		popupTemplate: template
 	  });
 	  map.add(featureLayer);
